@@ -1,4 +1,8 @@
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
+@Entity
+@PrimaryKeyJoinColumn(name="IdPs")
 public class Técnico extends Pessoa {
 	
 	private String Formacao;

@@ -1,3 +1,8 @@
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+
+@Entity
+@PrimaryKeyJoinColumn(name="IdPs")
 
 public class Professor extends Pessoa {
 	
