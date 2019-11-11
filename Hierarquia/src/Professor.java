@@ -1,3 +1,8 @@
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue(value = "Pf")
 
 public class Professor extends Pessoa {
 	

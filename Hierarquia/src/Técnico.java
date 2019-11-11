@@ -1,4 +1,8 @@
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
+@Entity
+@DiscriminatorValue(value = "Tc")
 public class Técnico extends Pessoa {
 	
 	private String Formacao;
