@@ -1,4 +1,6 @@
+import javax.persistence.Entity;
 
+@Entity
 public class Técnico extends Pessoa {
 	
 	private String Formacao;

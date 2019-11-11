@@ -1,15 +1,37 @@
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Pessoa implements Identificavel {
 	
-	private Long Id;
+	@Id
+	private Long IdPs;
 	private Long Matricula;
 	private String Nome;
+	private String Tipo;
+
+	public Long getIdPs() {
+		return IdPs;
+	}
+	public void setIdPs(Long idPs) {
+		IdPs = idPs;
+	}
+	public String getTipo() {
+		return Tipo;
+	}
+	public void setTipo(String tipo) {
+		Tipo = tipo;
+	}
+	
 	
 	public Long getId() {
-		return Id;
+		return IdPs;
 	}
 	public void setId(Long id) {
-		Id = id;
+		IdPs = id;
 	}
 	public Long getMatricula() {
 		return Matricula;
