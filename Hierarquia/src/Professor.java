@@ -15,4 +15,5 @@ public class Professor extends Pessoa {
 	public void setDisciplina(String disciplina) {
 		Disciplina = disciplina;
 	}
+
 }

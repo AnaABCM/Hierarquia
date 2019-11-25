@@ -39,5 +39,5 @@ public class Pessoa implements Identificavel {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
-
+	
 }
